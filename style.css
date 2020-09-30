@@ -1,0 +1,830 @@
+/*
+Theme Name: Alice Dubin
+Author: Meredith Grubbs
+*/
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  color: #000;
+}
+
+a {
+  color: #000;
+}
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Section Title */
+.section-title {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+/* Buttons */
+.btn {
+  font-weight: bold;
+}
+.btn-primary {
+  background-color: #fe8d85;
+  border-color: #fe8d85;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:focus {
+  background-color: #fd685d !important;
+  border-color: #fd685d !important;
+  box-shadow: none !important;
+}
+.btn-outline-primary {
+  border-color: #fe8d85;
+  color: #fe8d85;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary:active:focus {
+  background-color: #fd685d !important;
+  border-color: #fd685d !important;
+  box-shadow: none !important;
+}
+
+/* Sections */
+section {
+  margin-bottom: 8em;
+}
+
+/* Header */
+.navbar {
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 100;
+  width: 100vw;
+}
+.navbar-toggler {
+  margin-right: 0.5em;
+}
+.navbar-toggler:focus {
+  border: #fe8d85 4px solid;
+  outline: none;
+}
+ul.nav a,
+.website-footer a {
+  color: #000 !important;
+  transition: 0.3s;
+}
+ul.nav a:hover,
+.website-footer a:hover {
+  color: #fe8d85 !important;
+}
+.active span,
+.current-menu-item a {
+  font-weight: bold !important;
+  color: #fe8d85 !important;
+}
+
+/* Hero */
+#hero-img {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vw;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: -10;
+}
+.hero-content {
+  margin-top: 29vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+#hero h1 {
+  font-weight: 800;
+  font-size: 3em;
+  line-height: 1.4;
+  padding-bottom: 1em;
+}
+#hero h2 {
+  font-size: 1.5em;
+  line-height: 1.6;
+  padding-bottom: 1em;
+}
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hero-buttons .btn-primary {
+  margin-right: 0.5em;
+}
+
+/* Home Portfolio Tiles */
+.portfolio-tiles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.portfolio-tiles a {
+  flex: 1;
+  transition: 0.3s;
+}
+.portfolio-tiles a:hover {
+  transform: scale(1.008);
+}
+.portfolio-tiles img {
+  max-width: 100%;
+}
+.portfolio-tiles a:first-of-type {
+  margin-right: 2em;
+}
+.portfolio-tile {
+  height: 480px;
+  width: 480px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.portfolio-tile span {
+  font-size: 3em;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Home Bio */
+.home-bio {
+  background-color: #fe8d85;
+}
+.home-bio-content {
+  padding: 8em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.home-bio-photo {
+  margin-right: 2em;
+  margin-bottom: 1.5em;
+  flex: 0.3;
+  max-width: 100%;
+}
+.home-bio-photo img {
+  max-width: 100%;
+}
+.home-bio-details {
+  flex: 1;
+}
+.home-bio-details p {
+  line-height: 2.2;
+}
+
+/* Home Client Logos */
+.logos .section-title {
+  text-align: center;
+}
+.client-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.client-logos img {
+  width: 10em;
+  padding: 2em;
+}
+
+/* Home Testimonials */
+.home-testimonials {
+  background-color: #ffeceb;
+  padding: 8em 0;
+  margin-bottom: 0;
+}
+.home-testimonials .section-title {
+  margin-bottom: 1.5em;
+}
+.testimonials {
+  display: flex;
+  flex-direction: column;
+}
+.testimonial {
+  display: flex;
+  margin-bottom: 3em;
+  position: relative;
+}
+.testimonial-img {
+  margin-right: 2em;
+  margin-bottom: 1em;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  flex: 0.5;
+}
+.testimonial-img img {
+  margin: 0 auto;
+  width: 100%;
+  max-height: auto;
+}
+.blockquote {
+  flex: 1;
+}
+.blockquote-footer {
+  color: #000;
+  font-style: italic;
+}
+
+.more-testimonials {
+  margin-left: 11em;
+}
+
+/* Contact Form */
+.contact {
+  background-color: #fe8d85;
+}
+.contact-content {
+  padding: 8em 0;
+}
+.contact-content .section-title {
+  margin-bottom: 0.5em;
+}
+.contact-sub-heading {
+  transition: all 0.2s;
+}
+.contact-sub-heading:hover {
+  color: #fff;
+}
+/* form class */
+.wpcf7 {
+  margin-top: 2em;
+}
+label {
+  margin-bottom: 0;
+}
+textarea {
+  resize: none;
+}
+.wpcf7-text,
+textarea {
+  font-family: 'Montserrat', sans-serif !important;
+  border: none !important;
+}
+.wpcf7-text:focus,
+textarea:focus {
+  border: #000 solid 1px !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+/* form alert */
+.wpcf7 form.sent .wpcf7-response-output {
+  border-color: #b1d2b8;
+}
+
+/* Footer */
+.website-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4em;
+}
+.social-media {
+  display: flex;
+  margin-bottom: 2em;
+}
+.social-media a {
+  padding: 1em;
+  transition: 0.3s;
+}
+.social-media a:hover {
+  transform: scale(1.08);
+}
+.social-media img {
+  width: 3em;
+}
+.website-footer nav ul {
+  display: flex;
+  padding: 0;
+}
+.website-footer nav ul li {
+  padding: 1em;
+}
+
+/* About Page */
+#about-page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10em;
+}
+.about-content {
+  display: flex;
+}
+.about-content h4 {
+  font-weight: bold;
+  padding-bottom: 0.5em;
+}
+.about-content ul {
+  padding-left: 0;
+}
+.about-content li {
+  padding-bottom: 0.5em;
+}
+.about-content p {
+  line-height: 2.3;
+  margin-bottom: 2em;
+}
+.spacer {
+  width: 200px;
+  height: 3em;
+  margin-bottom: 2em;
+}
+
+/* left side */
+.left-side {
+  margin-right: 3em;
+  flex: 0.5;
+  position: relative;
+}
+.left-side-background {
+  background-color: #ffeceb;
+  position: relative;
+  z-index: -1;
+  padding-top: 1.7em;
+  padding-left: 1.7em;
+  padding-right: 1.7em;
+  padding-bottom: 2em;
+}
+.about-page-img {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.about-page-img img {
+  max-height: 100%;
+  margin-left: -15%;
+}
+.about-social-media {
+  margin-left: 1.5em;
+}
+.about-social-media img {
+  width: 2em;
+}
+.verticals-list {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* right side */
+.right-side {
+  flex: 1;
+}
+.rectangle {
+  margin: 2em 0;
+}
+.about-page-buttons {
+  margin-top: 2em;
+}
+
+/* about collage */
+.about-page-collage .row {
+  height: 20em;
+  margin-bottom: 1em;
+}
+.about-page-collage .col {
+  height: 100%;
+}
+.collage-img {
+  background-size: cover;
+  background-position: center;
+}
+.about-page-collage img {
+  max-height: 100%;
+}
+.about-page-collage .custom-margin {
+  margin-right: 1em;
+}
+
+/* Portfolio Page */
+.portfolio-page {
+  margin-top: 10em;
+}
+.portfolio-page .portfolio-tiles {
+  margin-bottom: 5em;
+}
+
+/* Testimonials Page */
+.testimonials-page {
+  margin-top: 10em;
+}
+.testimonials-page .section-title {
+  margin-bottom: 1.2em;
+}
+.pink-testimonial {
+  background-color: #ffeceb;
+  position: absolute;
+  z-index: -1;
+  left: -30vw;
+  top: -10%;
+  width: 130vw;
+  height: 120%;
+}
+.pink-margins {
+  margin-top: 3em;
+  margin-bottom: 7em;
+  padding: 2em 0;
+}
+.vertical-container {
+  display: flex;
+  justify-content: center;
+}
+.vertical-testimonial {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.vertical-testimonial:first-of-type {
+  margin-right: 3em;
+}
+.vertical-testimonial:last-of-type {
+  margin-left: 3em;
+}
+
+/* Contact Page */
+.contact-page {
+  margin-top: 10em;
+  margin-bottom: 5em;
+}
+.contact-page .contact-content {
+  padding: 5em 0;
+}
+
+/* Journalism Portfolio */
+.journalism-portfolio {
+  margin-top: 10em;
+  width: 100%;
+  margin-bottom: 0;
+}
+.journalism-portfolio-header {
+  position: relative;
+}
+.pink-header-background {
+  position: absolute;
+  z-index: -5;
+  background-color: #ffeceb;
+  width: 130vw;
+  left: -30vw;
+  height: 230%;
+  top: -85%;
+}
+.journalism-portfolio .section-title {
+  margin-bottom: 0.5em;
+}
+.journalism-nav {
+  margin-top: 4em;
+  position: relative;
+}
+.journalism-nav .active {
+  font-weight: bold;
+}
+.dark-pink-nav-background {
+  position: absolute;
+  background-color: #fd685d;
+  z-index: -1;
+  height: 74px;
+  top: -41px;
+  width: 130vw;
+  left: -30vw;
+}
+.journalism-nav .nav-link {
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+.journalism-nav .active {
+  color: black !important;
+  background-color: white !important;
+  padding-bottom: 1em;
+}
+.category-group {
+  margin-bottom: 6em;
+}
+.category-border {
+  border-top: #fd685d solid 2px;
+  width: 100px;
+  padding-top: 0.25em;
+  margin-bottom: 4em;
+  position: relative;
+}
+.category-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  position: absolute;
+  width: 500px;
+}
+
+.row {
+  margin-bottom: 2em;
+}
+.card-link {
+  width: 100%;
+}
+.card {
+  background-color: #ffeceb;
+  border: none;
+  padding: 0 1em;
+  transition: 0.2s;
+  margin-bottom: 2em;
+  width: 100%;
+}
+.card:hover {
+  transform: scale(1.01);
+}
+.card-img-top {
+  margin: 1em 0;
+  align-self: center;
+  height: 3.5em;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-img-top picture {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-img-top img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card-img {
+  height: 10em;
+  background-size: cover;
+  background-position: center;
+}
+.card-body {
+  padding: 2em 0;
+}
+.card-title {
+  line-height: 1.5;
+  text-align: center;
+  color: #000;
+  font-size: 0.8em;
+}
+.card-title:hover {
+  color: #000;
+}
+
+/* Content Marketing Portfolio */
+.content-marketing-portfolio .category-group {
+  margin-top: 7em;
+}
+.content-marketing-portfolio .pink-header-background {
+  height: 250%;
+  top: -115%;
+}
+
+/* Media Queries */
+@media screen and (min-width: 992px) {
+  .journalism-nav .nav-link {
+    font-size: 0.9em;
+  }
+  .dark-pink-nav-background {
+    height: 85px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .home-bio-content {
+    flex-direction: column;
+  }
+  .home-bio-photo {
+    margin-right: 0;
+  }
+  #hero-img {
+    height: 660px;
+    max-width: 100%;
+  }
+  .hero-content {
+    margin-top: 305px;
+  }
+}
+@media screen and (max-width: 961px) {
+  .testimonial {
+    flex-direction: column;
+  }
+  .more-testimonials {
+    margin-left: 0;
+  }
+  .website-footer nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  .website-footer nav ul li {
+    padding: 2em;
+    border-bottom: #ffeceb solid 1px;
+    width: 80vw;
+  }
+  .website-footer nav ul li:last-of-type {
+    border: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* Portfolio Tiles */
+  .portfolio-tiles {
+    flex-direction: column;
+  }
+  .portfolio-tiles a img {
+    padding: 0;
+  }
+  .portfolio-tiles a:first-of-type {
+    margin-bottom: 2em;
+    margin-right: 0;
+  }
+  .portfolio-tile {
+    width: 100%;
+  }
+  /* About Page */
+  .about-content {
+    flex-direction: column;
+  }
+  .left-side {
+    margin-right: 0;
+    width: 100%;
+  }
+  .left-side-background {
+    padding-left: 30vw;
+    padding-bottom: 0;
+    width: 130vw;
+    margin-left: -30vw;
+  }
+  .skills-list,
+  .verticals-list {
+    display: none;
+  }
+  .about-page-collage .row {
+    height: 50em;
+  }
+  .about-page-collage .custom-margin {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  /* Testimonials Page */
+  .testimonials-page {
+    margin-bottom: 0;
+  }
+  .vertical-container {
+    flex-direction: column;
+  }
+  .vertical-testimonial:first-of-type {
+    margin-right: 0;
+    padding-top: 3em;
+  }
+  .vertical-testimonial:last-of-type {
+    margin-left: 0;
+    padding: 3em 0;
+  }
+  .pink-margins {
+    padding: 0;
+  }
+  /* Journalism Portfolio */
+  .journalism-nav .nav-link {
+    font-size: 0.4em;
+  }
+  .dark-pink-nav-background {
+    height: 70px;
+  }
+  .card {
+    margin-bottom: 2em;
+  }
+  .category-group {
+    margin-bottom: 4em;
+  }
+}
+@media screen and (max-width: 650px) {
+  #hero h1 {
+    font-size: 2.5em;
+  }
+  #hero h2 {
+    font-size: 1em;
+    margin-bottom: 2em;
+  }
+}
+@media screen and (max-width: 575px) {
+  .journalism-portfolio {
+    margin-top: 9em;
+  }
+  .journalism-portfolio .nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  .dark-pink-nav-background {
+    position: absolute;
+    background-color: #fd685d;
+    z-index: -1;
+    height: 320px;
+    top: -20px;
+    width: 130vw;
+    left: -30vw;
+  }
+  .journalism-nav {
+    margin-top: 3em;
+  }
+  .journalism-nav .nav-link {
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+  }
+  .journalism-portfolio .nav-pills .active {
+    margin: 0.5em 0;
+  }
+  .tab-content {
+    margin-top: 4em;
+  }
+  .card-img-top {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #hero h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 424px) {
+  .content-marketing-portfolio .category-group {
+    margin-top: 9em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about-page-img {
+    width: 81%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-page-img img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .about-social-media {
+    width: 81%;
+    display: flex;
+    justify-content: center;
+  }
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-side-background {
+    width: 150vw;
+    margin-left: 0;
+    margin-bottom: 2em;
+  }
+  .about-social-media {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 300px) {
+  .hero-buttons {
+    flex-direction: column;
+  }
+  .hero-buttons .btn-primary {
+    margin-right: 0;
+    margin-bottom: 0.5em;
+  }
+  .social-media a {
+    padding: 0.5em;
+  }
+}
